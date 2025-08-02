@@ -1,0 +1,259 @@
+{
+	"info": {
+		"_postman_id": "6b2572df-9852-4f6d-ad74-26607b5c0974",
+		"name": "api-gateway-postman-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40022494"
+	},
+	"item": [
+		{
+			"name": "PostProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"code\": \"TV002\",\r\n  \"name\": \"Smart TV 50 pulgadas 4K\",\r\n  \"brand\": \"Samsung\",\r\n  \"price\": 499.99\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:443/product-service/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "443",
+					"path": [
+						"product-service",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostProducts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:443/product-service/products/batch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "443",
+					"path": [
+						"product-service",
+						"products",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:443/product-service/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "443",
+					"path": [
+						"product-service",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:443/product-service/products/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "443",
+					"path": [
+						"product-service",
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:443/product-service/products/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "443",
+					"path": [
+						"product-service",
+						"products",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostCart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productIds\": [6,7,9,10]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:443/cart-service/carts/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "443",
+					"path": [
+						"cart-service",
+						"carts",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:443/cart-service/carts/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "443",
+					"path": [
+						"cart-service",
+						"carts",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCart",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:443/cart-service/carts/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "443",
+					"path": [
+						"cart-service",
+						"carts",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostSale",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:443/sale-service/sales/create/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "443",
+					"path": [
+						"sale-service",
+						"sales",
+						"create",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSale",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:443/sale-service/sales/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "443",
+					"path": [
+						"sale-service",
+						"sales",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSaleWithProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:443/sale-service/sales/details/3\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "443",
+					"path": [
+						"sale-service",
+						"sales",
+						"details",
+						"3\n"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "7d52c16f-90b5-47ea-b0da-c98264ba4c40",
+		"name": "sale-service-postman-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40022494"
+	},
+	"item": [
+		{
+			"name": "PostSale",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/sales/create/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"sales",
+						"create",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSale",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/sales/2\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"sales",
+						"2\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSaleWithProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/sales/details/2\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"sales",
+						"details",
+						"2\n"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

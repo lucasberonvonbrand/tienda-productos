@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "30f70191-37dd-4dc2-9679-68191bca807f",
+		"name": "config-server-test-postman-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40022494"
+	},
+	"item": [
+		{
+			"name": "product-service-config",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/product-service/default",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"product-service",
+						"default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cart-service-config",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/cart-service/default",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cart-service",
+						"default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sale-service-config",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/sale-service/default",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"sale-service",
+						"default"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
